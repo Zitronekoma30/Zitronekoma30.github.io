@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('path/to/JetBrainsMonoNerdFont.woff2') format('woff2'),
+        url('path/to/JetBrainsMonoNerdFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #212626;
+    color: #EBDBB2;
+    font-family: 'JetBrainsMono Nerd Font', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #987E48;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    max-width: 800px;
+}
+
+.links-left,
+.links-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separator {
+    width: 2px;
+    height: 100%;
+    border-left: 2px dotted #485443;
+    margin: 0 20px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #485443;
+    margin-bottom: 10px;
+}
+
+.links-left a,
+.links-right a {
+    display: flex;
+    align-items: center;
+    color: #EBDBB2;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin: 5px 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.links-left a:hover,
+.links-right a:hover {
+    background: #485443;
+    color: #212626;
+    border-radius: 5px;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.art-links {
+    display: flex;
+    gap: 20px;
+    /* Adjust spacing between links */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.art-links a {
+    white-space: nowrap;
+    /* Prevents text wrapping */
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #EBDBB2;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin: 5px 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+a i {
+    margin-right: 8px;
+    color: inherit;
+    /* Icons match text color */
+}
+
+a:hover {
+    background: #485443;
+    color: #212626;
+    border-radius: 5px;
+}
